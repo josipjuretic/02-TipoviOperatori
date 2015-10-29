@@ -27,7 +27,13 @@ namespace CSharp.TipoviOperatori
             return broj * broj;
         }
 
-
+        /// <summary>
+        /// Broji znakove iz dvije rijeci
+        /// </summary>
+        /// <param name="prva">Broji znakove prve rijeci</param>
+        /// 
+        /// <param name="druga">Broji znakove druge rijeci</param>
+        /// <returns></returns>
         static int DuljinaDvijeRiječi(string prva, string druga)
         {
             return (prva + druga).Length;
