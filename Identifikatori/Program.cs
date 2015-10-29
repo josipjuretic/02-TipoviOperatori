@@ -17,6 +17,9 @@ namespace CSharp.TipoviOperatori
 
             double Main = 2.345;    // Main je rezervirana riječ pa se može također upotrijebiti za identifikator
             Console.WriteLine(Main);
+
+            long četrdesetšest = 46;
+            Console.WriteLine(četrdesetšest);
         }
     }
 }
