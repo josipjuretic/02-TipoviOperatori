@@ -12,25 +12,17 @@ namespace CSharp.TipoviOperatori
         {
             Osoba janko = new Student();
             
-            // ovo je istina:
-            bool daLiJeStudent = janko is Student;
-            Console.WriteLine("Janko je Student? {0}", daLiJeStudent);
+            Osoba osoba = new Osoba();
+            if (janko is Student)
+                Console.WriteLine("janko je tipa Student \n");
+            if(janko is Osoba)
+                Console.WriteLine("janko je tipa Osoba\n");
+            if (osoba is Osoba)
+                Console.WriteLine("osoba je tipa Osoba\n");
+            if(osoba is Student)
+                Console.WriteLine("osoba je tipa Student\n");
+                Console.ReadKey();
             
-            // i ovo je istina:
-            bool daLiJeOsoba = janko is Osoba;
-            Console.WriteLine("Janko je Osoba? {0}", daLiJeOsoba);
-
-
-            Osoba a = new Osoba();
-            // ovo je istina:
-            bool daLiJeAOsoba = a is Osoba;
-            Console.WriteLine("A je Osoba? {0}", daLiJeAOsoba);
-
-            // ovo nije istina:
-            bool daLiJeAStudent = a is Student;
-            Console.WriteLine("A je Student? {0}", daLiJeAStudent);
-
-            Console.ReadKey();
         }
     }
 }

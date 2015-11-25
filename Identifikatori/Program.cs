@@ -9,17 +9,17 @@ namespace CSharp.TipoviOperatori
     {
         static void Main(string[] args)
         {
-            double @string = 2.5;   // string je ključna riječ, no s predmetkom @ se može koristiti kao identifikator
-            Console.WriteLine(@string);
+            int @string = 5;//kljucna rijec nikad indet.
 
-            int get = 5;            // get je kontekstna ključna riječ (tj. samo u određenim slučajevima) pa se također može upotrijebiti za identifikator
-            Console.WriteLine(get);
+            string get = "Pero";
 
-            double Main = 2.345;    // Main je rezervirana riječ pa se može također upotrijebiti za identifikator
-            Console.WriteLine(Main);
+            double Main = 3.14;
 
-            long četrdesetšest = 46;
+            long četrdeset\u0161est = 46;
+
             Console.WriteLine(četrdesetšest);
+
+
         }
     }
 }

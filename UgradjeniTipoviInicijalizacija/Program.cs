@@ -9,14 +9,11 @@ namespace CSharp.TipoviOperatori
     {
         static void Main(string[] args)
         {
-            // ugrađeni tipovi se mogu inicijalizirati samo operatorom
-            // pridruživanja (=) ili podrazumijevanim konstruktorom!
-            int i0 = new int();
-            int i2 = 2;
+            int a = new int();
 
-           
-            string s2 = new string(new char[]{'s', 't', 'r', 'i', 'n', 'g', ' ', '2'});
-            string s3 = "string 3";
+            int b = 4;
+
+            string s1="abcd";
         }
     }
 }

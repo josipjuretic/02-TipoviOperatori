@@ -1,29 +1,45 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace PridruzivanjeBazniIzvedeni
+﻿
+namespace CSharp.TipoviOperatori
 {
-    class Bazna
+    class Osoba
     {
-        public void BaznaM() { }
+        public string DajOib()
+        {
+            return "0123456789";
+        }
     }
 
-    class Izvedena : Bazna
+    class Student : Osoba
     {
-        public void IzvedenaM() { }
+        public int PoložiIspit(string predmet)
+        {
+            return 3;
+        }
     }
 
     class Program
     {
         static void Main(string[] args)
         {
-            Bazna b = new Izvedena();
-            b.BaznaM();
+            Osoba osoba = new Osoba();
+            osoba.ToString();
+            osoba.DajOib();
+            osoba.GetHashCode();
+            osoba.GetType();
+            osoba.Equals( "545451454");
 
-            //Izvedena i = new Bazna();
-            //i.IzvedenaM();
+
+
+            
+            Osoba osobaStudent = new Student();
+            osobaStudent.DajOib();
+            osobaStudent.Equals(5);
+            osobaStudent.GetHashCode();
+            osobaStudent.GetType();
+            osobaStudent.ToString();
+
+            //Student studos = new Osoba(); moramo izvesti eksplicitni cast
+
         }
     }
 }

@@ -12,7 +12,7 @@ namespace CSharp.TipoviOperatori
             Console.WriteLine(Kvadrat(5));
             Console.WriteLine(DuljinaDvijeRiječi("dva", "2"));
         }
-
+        
         /// <summary>
         ///   Izračunava kvadrat broja.
         /// </summary>
@@ -28,11 +28,12 @@ namespace CSharp.TipoviOperatori
         }
 
         /// <summary>
-        /// Broji znakove iz dvije rijeci
+        /// Funkcija duljinaDvije Rijeci vraca broj karaktera ybroju dviju rijeci
         /// </summary>
-        /// <param name="prva">Broji znakove prve rijeci</param>
-        /// 
-        /// <param name="druga">Broji znakove druge rijeci</param>
+        /// <param name="prva"></param>
+        /// Prva rijec u funkciji, prvi parametar
+        /// <param name="druga"></param>
+        /// druga rijec u funkciji drugi parametar
         /// <returns></returns>
         static int DuljinaDvijeRiječi(string prva, string druga)
         {

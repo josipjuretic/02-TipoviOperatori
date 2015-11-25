@@ -5,29 +5,31 @@ namespace CSharp.TipoviOperatori
     {
         public int a;
         public double b;
+        public S(int aS, double bS) {
+            a = aS;
+            b = bS;
+    }
+
     }
 
     class Program
     {
         static void Main(string[] args)
         {
-            {
-                var a = 5;
-                var b = 3.16;
-                // ovdje prevoditelj javlja pogrešku da double
-                // ne može pretvoriti implicitno u int
-                b = a;
-            }
+            //zadatak1
+            var i0 = 5;//prevoditelj sam dodaje tip podatka ovisno kakvu smo vrijednost napisali
+            var d0 = 3.2;
+            //i0 = d0;nema implicitnog kastanja
+            //zadatak2
+            int i1 = 5;
+            double d1 = 3.2;
+            //zadatak3
+          var s=new S(2,3.15);
+          
 
-            {
-                // u IL kodu možemo vidjeti da će gornje inicijalizacije
-                // prevoditelj pretvoriti u isto što i donji kod
-                int a = 5;
-                double b = 3.16;
-            }
 
-            var s = new S();
-            s.a = 10;
+
+            
         }
     }
 }

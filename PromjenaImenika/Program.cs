@@ -1,5 +1,4 @@
-﻿using DrugiImenik;
-
+﻿//using DrugiImenik;
 namespace PrviImenik
 {
     class Program
